@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title of the App -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meal Suggestion App"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp"/>
+
+    <!-- Input for Time of Day -->
+    <EditText
+        android:id="@+id/timeOfDayInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Time of Day (e.g., Morning, Mid-morning, Afternoon)"
+        android:inputType="text"/>
+
+    <!-- Display the Meal Suggestion -->
+    <TextView
+        android:id="@+id/mealSuggestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your meal suggestion will appear here."
+        android:paddingTop="16dp"
+        android:textSize="16sp"/>
+
+    <!-- Button to Reset Input and Suggestions -->
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"/>
+</LinearLayout>
